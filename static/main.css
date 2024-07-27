@@ -1,0 +1,119 @@
+/* General body styles */
+body {
+    background-color: #010118; /* Dark blue background */
+    color: limegreen; /* Text color throughout the site */
+}
+
+/* Navbar styles */
+.navbar-dark .navbar-nav .nav-link {
+    color: limegreen; /* Color for navbar links */
+}
+
+.navbar-brand {
+    color: limegreen !important; /* Color for the brand name on the navbar */
+}
+
+/* Header text color */
+h1, h2 {
+    color: limegreen; /* Color for header text */
+}
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+/* Table styles */
+table {
+    color: limegreen; /* Text color for table */
+}
+
+.table thead th {
+    border-bottom: 2px solid limegreen; /* Border color for table header cells */
+}
+
+.table tbody tr td {
+    border-top: 1px solid limegreen; /* Border color for table body cells */
+}
+
+/* Profile picture styles */
+img.rounded-circle {
+    width: 150px; /* Width of the profile picture */
+    height: 150px; /* Height of the profile picture */
+}
+
+/* Profile header styles */
+header .profile-header {
+    padding: 20px; /* Padding around the profile header */
+    border: 1px solid limegreen; /* Border color around the profile header */
+    margin-bottom: 20px; /* Space below the profile header */
+    background-color: black; /* Background color for the profile header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Text container styles inside the profile header */
+header .profile-header .text-container {
+    margin-right: 20px; /* Space between text and profile picture */
+    text-align: center; /* Center text inside the text container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center text container items */
+}
+
+/* Styles for main header text */
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5rem; /* Font size for the main name */
+    padding-left: 260px; /* Space to the left of the name (adjust as needed) */
+}
+
+/* Styles for subtitle text */
+.subtitle {
+    margin: 0; /* Remove default margin */
+    color: limegreen; /* Color for the subtitle */
+    font-size: 1.5rem; /* Font size for the subtitle */
+    padding-left: 200px; /* Space to the left of the subtitle (adjust as needed) */
+}
+
+/* Profile picture alignment */
+header img {
+    margin-left: auto; /* Push image to the right */
+}
+
+/* Navbar background color */
+.navbar-dark.bg-dark {
+    background-color: black !important; /* Ensure navbar background is black */
+}
+
+/* Contact form styles */
+.container form {
+    background-color: #1a1a1a; /* Dark background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 5px; /* Rounded corners for the form */
+}
+
+/* Form control (input, textarea) styles */
+.container form .form-control {
+    background-color: #333; /* Dark background for inputs */
+    color: limegreen; /* Text color for inputs */
+    border: 1px solid limegreen; /* Border color for inputs */
+}
+
+/* Placeholder text color in inputs */
+.container form .form-control::placeholder {
+    color: limegreen; /* Placeholder text color */
+}
+
+/* Styles for submit button */
+.container form .btn-primary {
+    background-color: limegreen; /* Background color for the submit button */
+    border: none; /* Remove default border */
+}
+
+/* Styles for submit button on hover */
+.container form .btn-primary:hover {
+    background-color: #003d00; /* Darker green on hover */
+}

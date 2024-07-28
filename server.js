@@ -56,3 +56,10 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+
+
+// http://localhost:8080/resume
+
+// https://www.w3schools.com
+// https://getbootstrap.com/docs/5.3/getting-started/introduction/
+// https://developer.mozilla.org/en-US/

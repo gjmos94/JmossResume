@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jesus Moscosa - Data Engineer</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Jesus Moscosa</a>
+        <a class="navbar-brand" href="/resume">Jesus Moscosa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,64 +17,20 @@
                     <a class="nav-link" href="/resume">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="/skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <header class="text-center mt-4">
-        <div class="profile-header">
-            <div class="text-container">
-                <h1>Jesus Moscosa</h1>
-                <div class="subtitle">Data Engineer, Data Enthusiast, ETL Specialist</div>
-            </div>
-            <img src="https://media.licdn.com/dms/image/D5603AQG7hzj7bF9EFg/profile-displayphoto-shrink_200_200/0/1720294079488?e=2147483647&v=beta&t=QCn4iPQ0PFATPnOqa6Yus7P0aZPGgVGbY-kLD--suxI" class="rounded-circle" alt="Profile Picture">
-        </div>
-    </header>    
-
     <div class="container mt-4">
-        <p>Lorem Ipsum Dolor.....</p>
-        <ul>
-            <p>SELECT * FROM dbp.EXPERIENCE</p>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>HTML & CSS</li>
-            <!-- Add more skills here -->
-        </ul>
-
-        <h2>Projects</h2>
-        <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% for (let project of projects) { %> 
-                    <tr>
-                        <td><%= project.name %></td>
-                        <td><%= project.description %></td>
-                    </tr>
-                    <% } %>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- Contact Form Section -->
-    <div class="container mt-5">
-        <h2>Want to Get in Touch?</h2>
+        <h2>Contact</h2>
+        <p>Feel free to reach out through the form below:</p>
         <form>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -95,6 +51,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+q4h+6bck6NKW1E0zI5iZZCd26WfY3iu6Bodk37R4Ff3QeZTba" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 </body>
 </html>

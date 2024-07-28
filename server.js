@@ -3,7 +3,7 @@ let path = require('path');
 const sqlite3 = require('sqlite3'); 
 const { open } = require('sqlite'); 
 
-const PORT=8080; 
+const PORT = 8080; 
 
 const static_dir = path.join(__dirname, 'static');
 let db;
@@ -36,7 +36,19 @@ app.get('/test', async (req, res) => {
 
 app.get('/resume', async (req, res) => {
     const projectResult = await db.all("SELECT * FROM project");
-    res.render('resume', {projects: projectResult});
+    res.render('resume', {projects: projectResult, title: "Resume"});
+});
+
+app.get('/skills', (req, res) => {
+    res.render('skills', {title: "Skills"});
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects', {title: "Projects"});
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {title: "Contact"});
 });
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));

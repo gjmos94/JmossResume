@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Skills</title>
+    <title>Jesus Moscosa - Projects</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/resume">Jesus Moscosa</a>
+        <a class="navbar-brand" href="#">Jesus Moscosa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,12 +28,27 @@
             </ul>
         </div>
     </nav>
+
     <div class="container mt-4">
-        <h2>Skills</h2>
-        <p>This is the skills page. Add your content here.</p>
+        <h2>Projects</h2>
+        <div class="row">
+            <% projects.forEach(project => { %>
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="<%= project.image %>" alt="<%= project.name %>">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= project.name %></h5>
+                            <p class="card-text"><%= project.description %></p>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+q4h+6bck6NKW1E0zI5iZZCd26WfY3iu6Bodk37R4Ff3QeZTba" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
+

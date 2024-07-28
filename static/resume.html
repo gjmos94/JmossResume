@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jesus Moscosa - Data Engineer</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
+    <title>Jesus Moscosa - Data Engineer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,13 +17,13 @@
                     <a class="nav-link" href="/resume">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="/skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -52,23 +52,26 @@
         </ul>
 
         <h2>Projects</h2>
-        <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% for (let project of projects) { %> 
-                    <tr>
-                        <td><%= project.name %></td>
-                        <td><%= project.description %></td>
-                    </tr>
-                    <% } %>
-                </tbody>
-            </table>
+        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <% projects.forEach((project, index) => { %>
+                    <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                        <img src="<%= project.image %>" class="d-block w-100" alt="<%= project.name %>">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><%= project.name %></h5>
+                            <p><%= project.description %></p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#projectsCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#projectsCarousel" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
@@ -95,6 +98,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+q4h+6bck6NKW1E0zI5iZZCd26WfY3iu6Bodk37R4Ff3QeZTba" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 </body>
 </html>

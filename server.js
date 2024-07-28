@@ -34,9 +34,30 @@ app.get('/test', async (req, res) => {
     console.log(projectResult);
 });
 
-app.get('/resume', async (req, res) => {
-    const projectResult = await db.all("SELECT * FROM project");
-    res.render('resume', {projects: projectResult, title: "Resume"});
+app.get('/resume', (req, res) => {
+    const projects = [
+        {
+            name: 'Project 1',
+            description: 'Brief description of Project 1.',
+            image: 'https://via.placeholder.com/800x400?text=Project+1'
+        },
+        {
+            name: 'Project 2',
+            description: 'Brief description of Project 2.',
+            image: 'https://via.placeholder.com/800x400?text=Project+2'
+        },
+        {
+            name: 'Project 3',
+            description: 'Brief description of Project 3.',
+            image: 'https://via.placeholder.com/800x400?text=Project+3'
+        },
+        {
+            name: 'Project 4',
+            description: 'Brief description of Project 4.',
+            image: 'https://via.placeholder.com/800x400?text=Project+4'
+        }
+    ];
+    res.render('resume', { projects });
 });
 
 app.get('/skills', (req, res) => {

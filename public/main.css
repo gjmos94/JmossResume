@@ -24,17 +24,29 @@ ul {
 }
 
 /* Table styles */
-table {
-    color: limegreen; /* Text color for table */
+.table-container {
+    margin: 20px;
+}
+
+.table {
+    background-color: #000; /* Black background for the table */
+    color: #00ff00; /* Lime green text color */
+    border: 2px solid #00ff00; /* Lime green border color */
 }
 
 .table thead th {
-    border-bottom: 2px solid limegreen; /* Border color for table header cells */
+    border-bottom: 2px solid #00ff00; /* Lime green border for header */
 }
 
-.table tbody tr td {
-    border-top: 1px solid limegreen; /* Border color for table body cells */
+.table td, .table th {
+    border: 1px solid #00ff00; /* Lime green border for cells */
+    padding: 8px;
 }
+
+.table tbody tr:nth-child(even) {
+    background-color: #111; /* Slightly lighter black background for even rows */
+}
+
 
 /* Profile picture styles */
 img.rounded-circle {
@@ -125,4 +137,9 @@ header img {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+p {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.1rem; /* Adjust the size as needed, 1.5rem is an example */
 }

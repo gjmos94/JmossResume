@@ -143,3 +143,71 @@ p {
     font-weight: bold; /* Makes the text bold */
     font-size: 1.1rem; /* Adjust the size as needed, 1.5rem is an example */
 }
+
+.container.mt-4 {
+    font-size: 25px;
+}
+
+.container.mt-4 ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Optional */
+}
+
+
+/*///////////////////////////////*/
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.article-image {
+    flex: 1;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .article-item {
+        flex-direction: column;
+    }
+}
+
+
+
+/*///////////////////////////////*/
+.card-link {
+    display: block;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent elements */
+}
+
+.card-link:hover .card {
+    /* Optional: Add hover effect on card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slightly enlarge card on hover */
+}

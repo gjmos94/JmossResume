@@ -6,6 +6,7 @@ const { open } = require('sqlite');
 const PORT = 8080; 
 
 const static_dir = path.join(__dirname, 'static');
+const public_dir = path.join(__dirname, 'public');
 let db;
 
 (async () => { 
@@ -25,6 +26,10 @@ app.set('view engine', 'ejs');
 /////////////////////////////////////////////
 ///////////////////ROUTES////////////////////
 /////////////////////////////////////////////
+
+app.get('/index.html', (req, res) => {
+    res.sendFile(path.join(public_dir, 'index.html'));  // Serve index.html from the 'public' directory
+});
 
 app.get('/test', async (req, res) => {
     const result = await db.get("SELECT * FROM project WHERE id = 1");

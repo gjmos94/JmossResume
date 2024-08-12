@@ -55,6 +55,7 @@ img.rounded-circle {
 }
 
 /* Profile header styles */
+/* Profile header styles */
 header .profile-header {
     padding: 20px; /* Padding around the profile header */
     border: 1px solid limegreen; /* Border color around the profile header */
@@ -62,24 +63,24 @@ header .profile-header {
     background-color: black; /* Background color for the profile header */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Vertically align items */
-    justify-content: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align items to the start (left) */
     border-radius: 10px; /* Rounded corners */
 }
 
 /* Text container styles inside the profile header */
 header .profile-header .text-container {
     margin-right: 20px; /* Space between text and profile picture */
-    text-align: center; /* Center text inside the text container */
+    text-align: left; /* Align text to the left */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack text vertically */
-    align-items: center; /* Center text container items */
+    align-items: flex-start; /* Align text container items to the start (left) */
 }
 
 /* Styles for main header text */
 header h1 {
     margin: 0; /* Remove default margin */
     font-size: 2.5rem; /* Font size for the main name */
-    padding-left: 260px; /* Space to the left of the name (adjust as needed) */
+    padding-left: 80px;
 }
 
 /* Styles for subtitle text */
@@ -87,8 +88,8 @@ header h1 {
     margin: 0; /* Remove default margin */
     color: limegreen; /* Color for the subtitle */
     font-size: 1.5rem; /* Font size for the subtitle */
-    padding-left: 200px; /* Space to the left of the subtitle (adjust as needed) */
 }
+
 
 /* Profile picture alignment */
 header img {

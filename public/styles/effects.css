@@ -1,23 +1,22 @@
 /* Type Writer Effect */
 .tw h1 {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-    }
-    
-    h1 {
-        font-size: 9vmin;
+        font-size: 7vmin;
         color: limegreen;
         text-align: left;
         font-family: monospace, sans-serif;
         font-weight: 700;
         margin: 1rem 0 1rem 2rem;
-    }
 }  
 
+.tw2 h3 {
+        font-size: 5vmin;
+        color: limegreen;
+        padding: 4vmin;
+        text-align: center;
+        font-family: monospace, sans-serif;
+        font-weight: 200;
+        margin: 1rem 0 1rem 2rem;
+}  
 /* Typewriter effect 1 */
 
 @keyframes typing {
@@ -68,7 +67,7 @@
     6.8372%, 20.5116% { content: "SELECT * FROM d"; }
     7.9767%, 19.3721% { content: "SELECT * FROM dbo.Wo"; }
     9.1163%, 18.2326% { content: "SELECT * FROM dbo.Work_Hist"; }
-    10.2558%, 95.0930% { content: "SELECT * FROM dbo.Work_History"; }
+   10.2558%, 17.0930% { content: "SELECT * FROM dbo.Work_History"; }
 }
     
 @keyframes blink {

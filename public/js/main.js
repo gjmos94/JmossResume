@@ -1,3 +1,5 @@
+///////////////////////////////// Resizing Effect /////////////////////////////////
+
 // Debounce function to limit how often adjustFontSize is called
 function debounce(func, wait) {
     let timeout;
@@ -32,7 +34,8 @@ const debouncedResize = debounce(adjustFontSize, 150);
 window.onload = adjustFontSize;
 window.onresize = debouncedResize;
 
-// Typing Effect
+///////////////////////////////// Typing Effect /////////////////////////////////
+
 const phrases = [
     "SELECT * FROM dbo.Work_History"
 ];

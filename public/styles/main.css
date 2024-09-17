@@ -17,7 +17,7 @@ ul {
 }
 
 p {
-    font-weight: bold; /* Makes the text bold */
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.1rem; /* Adjust the size as needed, 1.5rem is an example */
     text-align: left;
     margin-left: auto;
@@ -26,6 +26,9 @@ p {
     width: 90%;
 }
 
+article {
+    margin: 50px 0;
+}
 .subtitle {
     margin: 0; /* Remove default margin */
     color: limegreen; /* Color for the subtitle */

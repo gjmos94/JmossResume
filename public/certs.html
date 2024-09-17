@@ -7,7 +7,12 @@
     <title>Certificates and Diplomas</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/containers.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="stylesheet" href="styles/effects.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -39,7 +44,9 @@
     <!-- Main Content -->
     <main class="container my-4">
         <section class="text-center">
-            <h1>Certificates & Diplomas</h1>
+            <div class="content-header">
+                <h1>Certificates & Diplomas</h1>
+            </div>
             <p>
                 A collection of my academic achievements and professional certifications.
                 From my educational background to specialized certifications in data engineering and analytics,
@@ -50,16 +57,21 @@
 
         <!-- Diplomas Section -->
         <section class="my-5">
-            <h2>Diplomas</h2>
+            <h2 class="header-underline">Diplomas</h2>
             <article class="container-duo d-flex align-items-center">
                 <div class="image-duo">
-                    <img src="Accounting_Diploma.jpg" alt="Accounting Diploma" class="img-fluid">
+                    <img src="assets/images/Accounting_Diploma.jpg" alt="Accounting Diploma" class="img-fluid">
                 </div>
                 <div class="text-duo ml-4">
-                    <p>Testing split of text on duo container.</p>
+                    <p>Bachelor's in Accounting, which has given me a solid foundation in financial reporting, auditing, tax preparation, and budgeting.
+                    I learned how to analyze financial data, spot trends, and make data-driven decisions, all skills that directly relate to data analytics.
+                    Handling large datasets, ensuring data accuracy, and applying quantitative methods are common in both fields.
+                    My accounting background allows me to approach data analytics with a strong understanding of 
+                    financial principles, which helps me build predictive models, assess risks, and contribute to better decision-making in any business context.</p>
                 </div>
             </article>
         </section>
+        <div class="dl"></div>
     </main>
 
     <!-- Bootstrap JS and dependencies -->

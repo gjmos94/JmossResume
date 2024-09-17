@@ -88,3 +88,15 @@
 .card:hover {
     transform: scale(1.02);
 }
+
+.content-header {
+    padding: 20px; /* Padding around the profile header */
+    border: 1px solid limegreen; /* Border color around the profile header */
+    margin-bottom: 20px; /* Space below the profile header */
+    background-color: black; /* Background color for the profile header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Align items to the start (left) */
+    border-radius: 10px; /* Rounded corners */
+    flex-wrap:wrap;
+}

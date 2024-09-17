@@ -1,3 +1,24 @@
+/*////////////////////////////Header Underline////////////////////////////*/
+
+.header-underline {
+    font-size: 2rem;
+    color: limegreen; /* Set the header text color to red */
+    position: relative;
+  }
+  
+  .header-underline::after {
+    content: "";
+    display: block;
+    width: 60px; /* Width of the rectangle */
+    height: 8px; /* Height of the rectangle */
+    background-color: limegreen; /* Red color */
+    border-radius: 5px; /* Rounded corners to match the shape */
+    position: absolute;
+    bottom: -20px; /* Adjust positioning below the text */
+    left: 0;
+  }
+
+/*////////////////////////////Profile Picture////////////////////////////*/
 /* Profile picture styles */
 img.rounded-circle {
     width: 150px; /* Width of the profile picture */

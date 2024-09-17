@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .article-item {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+    animation: none;
+    }
+    
+    @keyframes sequencePopup {
+    0%, 100% { content: "data engineer"; }
+    25% { content: "data analyst"; }
+    50% { content: "business intelligence eng."; }
+    75% { content: "analytics engineer"; }
+    }
+
+    .typewriter::before {
+    content: "data engineer";
+    animation: sequencePopup 12s linear infinite;
+    }
+}

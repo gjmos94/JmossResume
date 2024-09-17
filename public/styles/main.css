@@ -1,0 +1,51 @@
+/* General body styles */
+body {
+    background-color: #010118; /* Dark blue background */
+    color: limegreen; /* Text color throughout the site */
+}
+
+h1, h2 {
+    color: limegreen; /* Color for header text */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+p {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.1rem; /* Adjust the size as needed, 1.5rem is an example */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}
+
+.subtitle {
+    margin: 0; /* Remove default margin */
+    color: limegreen; /* Color for the subtitle */
+    font-size: 1.5rem; /* Font size for the subtitle */
+}
+
+.intros {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: -1.8px;
+    color: #00FF30;
+    font-weight: 540;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}

@@ -65,6 +65,16 @@
     
 }
 
+.halftone-divider {
+    height: 12px;
+    width: 100%;
+    background-image: radial-gradient(circle at 3px 3px, rgba(0, 255, 0, .8) 5%, transparent 25%), 
+                      radial-gradient(circle at 0px 0px, rgba(0, 255, 0, .8) 5%, transparent 5%);
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
 /*////////////////////////////Typewriter////////////////////////////*/
 /* Type Writer Effect */

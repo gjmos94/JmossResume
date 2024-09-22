@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jesus Moscosa - Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/containers.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/elements.css">
+    <link rel="stylesheet" href="../styles/effects.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <style>
+        .card {
+            background-color: #333; /* Dark gray background for cards */
+            border: none;
+            margin-bottom: 20px;
+            max-width: 600px; /* Decrease card width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+            object-fit: cover;
+        }
+        .card-body {
+            color: #f5f5f5; /* Light text color */
+        }
+        .card-title {
+            color: #00ff00; /* Lime green for title */
+        }
+        .card-container {
+            margin: 20px;
+        }
+        .card-link {
+            display: block;
+            text-decoration: none;
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+        }
+        /* Apply margin to move cards except the first one */
+        .card-container a:nth-child(n+2) .card {
+            margin-left: 217px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/jesus-moscosa-high-resolution-logo-transparent.png" alt="JMLogo" style="height: 20px; width: auto;">
+        </a>
+        <!--<a class="navbar-brand" href="index.html">Jesus Moscosa</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../certs.html">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dataprojsV1.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section class="text-center">
+            <div class="content-header">
+                <h1>Projects</h1>
+            </div>
+            <p style="font-weight: normal;">
+                Explore a collection of projects that showcase my expertise in data engineering, focusing on building scalable, 
+                efficient data pipelines, automating workflows, and delivering actionable insights through advanced analytics. 
+                Each project highlights my proficiency in tools like Azure Synapse, Python, SQL, and Power BI, as well as my 
+                commitment to optimizing data-driven solutions.
+            </p>
+        </section>
+        <div class="card-container">
+            <a href="dataengineering/datengpro1.html" class="card-link">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/python_datEng.jpg.jpg" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">End-to-End Data Pipeline Optimization with Azure Synapse</h5>
+                        <p class="card-text" style="font-weight: normal;">This project showcases how Azure Synapse and Python can be 
+                            streamline the data pipeline process. By automating ETL processes 
+                            with Python and SQL, and building insightful reports with Power BI</p>
+                    </div>
+                </div>
+            </a>
+            <a href="datengpro2.html" class="card-link">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/dataAnalytics.jpg" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">From Data to Action: Crafting Solutions with Prescriptive Analytics</h5>
+                        <p class="card-text" style="font-weight: normal;">This project analyzes workforce productivity across different locations, 
+                                            using prescriptive analytics to identify patterns and recommend strategies 
+                                            for optimizing performance in each region.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="datengpro3.html" class="card-link">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/images/pythonAPI.jpg" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Automating API Workflows with Python and Postman for Seamless Integration</h5>
+                        <p class="card-text" style="font-weight: normal;">This project focuses on automating API workflows using 
+                                            Python and Postman to enable seamless integration between systems, 
+                                            enhancing efficiency and reducing manual intervention in data exchange processes.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+q4h+6bck6NKW1E0zI5iZZCd26WfY3iu6Bodk37R4Ff3QeZTba" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
